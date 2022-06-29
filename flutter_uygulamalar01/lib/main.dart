@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_uygulamalar01/ikon_uygulamasi.dart';
+import 'package:flutter_uygulamalar01/column.dart';
 import 'package:flutter_uygulamalar01/row_column.dart';
 
 void main(List<String> args) {
@@ -16,11 +17,9 @@ class ikonuygulamasi extends StatelessWidget {
       theme: ThemeData(
         appBarTheme: AppBarTheme(color: Colors.blueGrey)),
       home: Scaffold(
-        
       appBar: AppBar (
         title: Text("İkon Uygulaması"),
       ),
-
       body: RowandColumnUygulama(),
       ),
       
