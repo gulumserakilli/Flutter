@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_uygulamalar01/ikon_uygulamasi.dart';
-import 'package:flutter_uygulamalar01/column.dart';
 import 'package:flutter_uygulamalar01/row_column.dart';
 
 void main(List<String> args) {

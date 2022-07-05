@@ -14,6 +14,28 @@ class RowandColumnUygulama extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+           Column(
+              mainAxisAlignment: MainAxisAlignment.start,  // children widgetlerin içeride dikeyde nereden itiabaren konumlanmaya başlayacağini belirtir. Örmekte yukarıdan asağıya dikey hareket.              
+              mainAxisSize: MainAxisSize.max,       // ana eksenin boyutu nu  belirler.Örnekte kolonlar dikeyde maxsimun esnesin.
+              crossAxisAlignment: CrossAxisAlignment.center,  // cildren widgetlerin içeride dikey olarak ustuste gelen widgetlerin yatayda hangi sekilde açapraz konumlanacağını belirtir. Örnekte ayatayda merkezde konumlansın.
+              verticalDirection: VerticalDirection.down, 
+              children:[
+                Container(
+                  alignment: Alignment.center,
+                  width: 50,
+                  height: 50,
+                  color: Colors.amber,
+                child: Text(
+              "C",
+              style: TextStyle(
+                fontSize: 21,
+                fontWeight: FontWeight.w400,
+              ),
+                ),
+                ),
+              ],
+           ),
+           
           Container(
             width: 100,
             height: 50,
@@ -27,6 +49,7 @@ class RowandColumnUygulama extends StatelessWidget {
               ),
             ),
           ),
+         
           Container(
             width: 100,
             height: 50,
@@ -53,9 +76,9 @@ class RowandColumnUygulama extends StatelessWidget {
               ),
             ),
           ),
+             
         ],
       ),
-      
     );
   }
 }
